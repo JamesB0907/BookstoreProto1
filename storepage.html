@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookstore</title>
-    <link rel="stylesheet" href="storepage.css">
-</head>
-<body>
-    <script src="books.js">
-        
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookstore</title>
+        <link rel="stylesheet" href="storepage.css" />
+    </head>
+    <body>
+        <div id="book-container"></div>
+        <script src="books.js"></script>
+        <script>
+            const bookContainer = document.getElementById("book-container");
+            books.map((book) => {
+                const bookDiv = document.createElement("div");
+                bookDiv.className = "book";
+                bookDiv.id = book.id;
+                bookDiv.innerHTML = `
+                    <h2>${book.title}</h2>
+                    <p>Author: ${book.author}</p>
+                    <p>Price: $${book.price}</p>
+                `;
+                bookContainer.appendChild(bookDiv);
+            })
+        </script>
+    </body>
 </html>
