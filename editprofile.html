@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookstore</title>
+        <link rel="stylesheet" href="editprofile.css" />
+    </head>
+    <body>
+        <h1>Edit Profile</h1>
+        <div id="edit-profile-form">
+            <fieldset>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" value="username101" />
+                </div>
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" value="Jane" />
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" value="Doe" />
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" value="1414 Road Lane" />
+                </div>
+                <div>
+                    <label for="phone-number">Phone Number: </label>
+                    <input type="text" id="phone-number" value="555-555-5555" />
+                </div>
+            </fieldset>
+            <div class="button-container">
+            <button onclick="windowPrompt()"><h2>Change password?</h2></button>
+            <button><h2>Submit</h2></button>
+        </div>
+        </div>
+        <script>
+            const windowPrompt = () => {
+                let passwordOne = this.prompt("Please enter your new password");
+                let passwordTwo = this.prompt("Please enter again to confirm");
+                if (passwordOne !== passwordTwo) {
+                    window.alert("Your passwords do not match!");
+                } else {
+                    window.alert("Password changed succesfully!");
+                }
+            };
+        </script>
+    </body>
+</html>

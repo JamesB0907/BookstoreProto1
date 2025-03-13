@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+#navbar {
+    background-color: burlywood;
+    width: 100vw;
+    height: 8vh;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-text {
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    
+}
+
+img {
+    width: 50px;
+    right:0;
+    position: absolute;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Add a book </h1>
+    <div id="book-form-container"></div>
+    <script src="books.js"></script>
+    <!--Unimplemented book adding feature-->
+    <!-- <script>
+        const newBook = {
+            id: 0,
+            title: '',
+            author: '',
+            price: 0,
+            image: ''
+        };
+        const bookFormContainer = document.getElementById('book-form-container');
+        const bookForm = document.createElement('form');
+        bookForm.innerHTML = `
+            <input type="text" value="${newBook.title}" placeholder="Title"  id="title" required>
+            <input type="text" value="${newBook.author}" placeholder="Author" id="author" required>
+            <input type="number" value="${newBook.price}" placeholder="Price" id="price" required>
+            <input type="text" value="${newBook.image}" placeholder="Image URL" id="image">
+            `
+        bookFormContainer.appendChild(bookForm);
+
+        const submitButton = document.createElement('button');
+        submitButton.innerText = 'Add Book';
+        bookFormContainer.appendChild(submitButton);
+        submitButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            newBook.id = books.length + 1; 
+            newBook.title = document.getElementById('title').value;
+            newBook.author = document.getElementById('author').value;
+            newBook.price = document.getElementById('price').value;
+            newBook.image = document.getElementById('image').value;
+            books.push(newBook);
+            alert('Book added successfully!');
+        });
+        const fakeNewBook = document.createElement('div');
+        fakeNewBook.innerHTML = `
+                    <h2>${newBook.title}</h2>
+                    <p>Author: ${newBook.author}</p>
+                    <p>Price: $${newBook.price}</p>
+                `; -->
+    </script>
+</body>
+</html>
